@@ -1,5 +1,7 @@
 #!/bin/bash
 
+$CURRENT_USER=$USER
+
 # Install Git
 echo "Checking for Git installation."
 
@@ -15,7 +17,7 @@ echo "Checking for Emacs installation"
 
 if ! [ -x "$(command -v emacs)" ]; then
     echo 'Emacs is not installed.\\n Installing Emacs now...'
-    apt-get install emacs -y
+    $(apt-get install emacs -y)
     echo "Emacs has been installed" "$(command -v emacs)"
 else
     echo "Skipping Emacs instalation. Arealdy installed.\\n"
@@ -25,7 +27,7 @@ echo "Checking for font Source Code Pro"
 
 if ! [ fc-list | grep -i "SourceCodePro"  ]; then
     echo "Font Source Code Pro not found in ~/.fonts.\\n\\n Installing Source Code Pro font. "
-    git clone https://github.com/adobe-fonts/source-code-pro.git ~/.fonts
+    $(git clone https://github.com/adobe-fonts/source-code-pro.git ~/.fonts)
 
    SOURCE_CODE_PRO=$(fc-list | grep -i "SourceCodePro");
    echo 'Font Source Code Pro installed to ~/.fonts ' 
@@ -36,7 +38,7 @@ fi
 echo "Checking for Spacemacs instalation"
 
 if ! [-f ".spacemacs" ]; then
-    git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
+    $(git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d)
 else
     echo "~/.spacemacs already exists"
 fi
