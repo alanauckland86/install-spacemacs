@@ -1,6 +1,7 @@
 #!/bin/bash
 
-$CURRENT_USER=$USER
+# Run this script with the command
+# sudo -u $USER ./install-spacemacs/install-spacemacs.sh
 
 # Install Git
 echo "Checking for Git installation."
