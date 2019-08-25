@@ -1,17 +1,5 @@
 #!/bin/bash
 
-## reset environment
-echo 'remove git'
-apt remove git -y
-#echo 'remove fonts'
-#rm -r ~/.fonts
-
-echo 'remove spacemacs'
-rm -r ~/.emacs.d
-rm ~/.spacemacs
-
-unset $SOURCE_CODE_PRO
-
 # Install Git
 echo "Checking for Git installation."
 
