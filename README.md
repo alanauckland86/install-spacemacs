@@ -4,7 +4,6 @@
 from Alan Auckland's Github repository [Here](https://github.com/alanauckland86/install-spacemacs/archive/master.zip)
 
 2. Extract script
-
   2.1 You can use your Archive manager
   2.2 You can extrat in terminal with following commands
   ```bash
