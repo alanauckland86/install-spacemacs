@@ -30,7 +30,7 @@ if ! [ fc-list | grep -i "SourceCodePro"  ]; then
     echo "Font Source Code Pro not found in ~/.fonts.\\n\\n Installing Source Code Pro font. "
     $(git clone https://github.com/adobe-fonts/source-code-pro.git ~/.fonts)
 
-   SOURCE_CODE_PRO=$(fc-list | grep -i "SourceCodePro");
+   SOURCE_CODE_PRO=$(fc-list | grep -i "SourceCodePro" > /dev/null);
    echo 'Font Source Code Pro installed to ~/.fonts ' 
 else
     echo 'Font Source Code Pro already installed.\\n'
