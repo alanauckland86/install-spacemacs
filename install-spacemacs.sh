@@ -45,5 +45,5 @@ else
 fi
 
 #Take ownership
-chown -R $USER:$USER ~/.fonts
-chown -R $USER:$USER ~/.emacs.d
+chown -R $SUDO_USER:$SUDO_USER ~/.fonts
+chown -R $SUDO_USER:$SUDO_USER ~/.emacs.d
