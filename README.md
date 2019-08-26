@@ -14,8 +14,8 @@ from Alan Auckland's Github repository [Here](https://github.com/alanauckland86/
    3.1 Make sure script is executable (if not already)
     ```bash
      chmod +x install-spacemacs/install-spacemacs.sh
-  ```
+     ```
   3.2 execute script with following command
-  ```bash
+  <code>
       sudo -u $USER ./install-spacemacs/isntall-spacemacs.sh
-      ```
+  </code> 
