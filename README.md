@@ -11,11 +11,11 @@ from Alan Auckland's Github repository [Here](https://github.com/alanauckland86/
      unzip install-spacemacs.zip
   ```
 3. Run scripti <br /> <br />
-   3.1 Make sure script is executable (if not already)<br />
+   3.1 Make sure script is executable (if not already)
    ```bash
-   chmod +x install-spacemacs/install-spacemacs.sh
-   ``` <br />
-   3.2 execute script with following command <br />
+      chmod +x install-spacemacs/install-spacemacs.sh
+   ```  <br />
+   3.2 execute script with following command 
    ```bash
       sudo -u $USER ./install-spacemacs/install-spacemacs.sh
    ```
