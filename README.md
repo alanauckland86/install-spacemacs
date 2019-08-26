@@ -12,9 +12,9 @@ from Alan Auckland's Github repository [Here](https://github.com/alanauckland86/
   ```
 3. Run scripti <br /> <br />
    3.1 Make sure script is executable (if not already)
-   ```bash
-      chmod +x install-spacemacs/install-spacemacs.sh
-   ```  <br />
+    ```bash
+     chmod +x install-spacemacs/install-spacemacs.sh
+  ```
    3.2 execute script with following command 
    ```bash
       sudo -u $USER ./install-spacemacs/install-spacemacs.sh
