@@ -44,4 +44,10 @@ else
     echo "~/.spacemacs already exists"
 fi
 
+#Take ownership
+chown -R $USER:$USER ~/.fonts
+chown -R $USER:$USER ~/.emacs.d
+chown  $USER:$USER ~/.spacemacs 
+chown $SUER:$USER ~/.spacemacs.env
+
 emacs
