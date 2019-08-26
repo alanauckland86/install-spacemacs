@@ -17,5 +17,11 @@ from Alan Auckland's Github repository [Here](https://github.com/alanauckland86/
      ```
    3.2 execute script with following command<br /><br /> 
     ```bash
-	sudo -u $USER ./install-spacemacs/isntall-spacemacs.sh
+	sudo ./install-spacemacs/isntall-spacemacs.sh
     ``` 
+4. Run emacs
+   4.1 In terminal execute
+   ```bash
+      emacs
+      ```
+   4.2 Open Emacs by finding it in your application menu list
