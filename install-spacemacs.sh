@@ -26,7 +26,7 @@ fi
 
 echo "Checking for font Source Code Pro"
 
-if ! [ fc-list | grep -i "SourceCodePro"  ]; then
+if ! [ fc-list | grep -i "SourceCodePro" > /dev/null ]; then
     echo "Font Source Code Pro not found in ~/.fonts.\\n\\n Installing Source Code Pro font. "
     $(git clone https://github.com/adobe-fonts/source-code-pro.git ~/.fonts)
 
