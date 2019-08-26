@@ -15,8 +15,7 @@ from Alan Auckland's Github repository [Here](https://github.com/alanauckland86/
     ```bash
      chmod +x install-spacemacs/install-spacemacs.sh
   ```
-   3.2 execute script with following command
-   ```bash
+  3.2 execute script with following command
+  ```bash
       sudo -u $USER ./install-spacemacs/isntall-spacemacs.sh 
-   ```
-   
+  ```
