@@ -3,8 +3,6 @@
 # Run this script with the command
 # sudo ./install-spacemacs-master/install-spacemacs.sh
 
-USER_NAME= $USER
-
 # Install Git
 echo "Checking for Git installation."
 
@@ -47,9 +45,5 @@ else
 fi
 
 #Take ownership
-chown -R $USER_NAME:$USER_NAME ~/.fonts
-chown -R $USER_NAME:$USER_NAME ~/.emacs.d
-chown $USER_NAME:$USER_NAME ~/.spacemacs 
-chown $SUER_NAME:$USER_NAME ~/.spacemacs.env
-
-emacs
+chown -R $USER:$USER ~/.fonts
+chown -R $USER:$USER ~/.emacs.d
