@@ -11,7 +11,7 @@ if ! [ -x "$(command -v git)" ]; then
     apt-get install git -y
     echo "Git has been installed" "$(command -v git)"
 else
-    echo "Skipping git instalation. Already installed.\\n"
+    echo "Skipping git installation. Already installed.\\n"
 fi
 
 echo "Checking for Emacs installation"
@@ -21,22 +21,22 @@ if ! [ -x "$(command -v emacs)" ]; then
     $(apt-get install emacs -y)
     echo "Emacs has been installed" "$(command -v emacs)"
 else
-    echo "Skipping Emacs instalation. Arealdy installed.\\n"
+    echo "Skipping Emacs installation. Already installed.\\n"
 fi
 
 echo "Checking for font Source Code Pro"
 
 if ! [ fc-list | grep -i "SourceCodePro" > /dev/null ]; then
-    echo "Font Source Code Pro not found in ~/.fonts.\\n\\n Installing Source Code Pro font. "
+    echo "Font Source Code Pro not found in ~/.fonts.\\n\\n Installing Source Code Pro font."
     $(git clone https://github.com/adobe-fonts/source-code-pro.git ~/.fonts)
 
    SOURCE_CODE_PRO=$(fc-list | grep -i "SourceCodePro" > /dev/null);
-   echo 'Font Source Code Pro installed to ~/.fonts ' 
+   echo 'Font Source Code Pro installed to ~/.fonts' 
 else
     echo 'Font Source Code Pro already installed.\\n'
 fi
 
-echo "Checking for Spacemacs instalation"
+echo "Checking for Spacemacs installation"
 
 if ! [-f ".spacemacs" ]; then
     $(git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d)
